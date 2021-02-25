@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><center>
+<h1> SIMPLE Marksheet</h1>
+<script>
+
+var name = ("Alex");
+var roll = ("354524");
+var Eng = ("50");
+var Maths = ("60");
+var Urdu = ("80");
+var Islamiat =("90");
+var Physics = ("68");
+var Obtainedmarks = parseInt(Eng) + parseInt(Maths) + parseInt(Urdu) + parseInt(Islamiat) + parseInt(Physics)
+var Percentage = parseFloat(Obtainedmarks) * parseFloat(100) / parseFloat(500); 
+
+document.write("Name = "+name+"<br>");
+document.write("Roll = "+roll+"<br>");
+document.write("Eng = "+Eng+"<br>");
+document.write("Maths = "+Maths+"<br>");
+document.write("Urdu = "+Urdu+"<br>");
+document.write("Islamiat = "+Islamiat+"<br>");
+document.write("Physics = "+Physics+"<br>");
+document.write("Obtained Marks = "+Obtainedmarks+"<br>");
+document.write("Percentage = "+Percentage+ "%" +"<br>");
+document.write("Grade: ");
+
+if(Percentage >= 80){
+    document.write("A1");
+}else 
+if(Percentage >= 70){
+    document.write("A");
+}else 
+if(Percentage >= 60){
+    document.write("B");
+}else 
+if(Percentage >= 50){
+    document.write("C");
+}else
+if(Percentage >= 40){
+    document.write("D");
+}else
+if(Percentage >= 33){
+    document.write("Pass");
+}else
+   document.write("Fail");
+
+</script>
+  
+</center>
+<img src="a.png" alt="">
+</body>
+</html>
